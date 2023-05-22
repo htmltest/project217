@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:320px; height:100%}
+
+body {min-width:320px; height:100%; margin:0; padding:0; font:14px/24px Arial, sans-serif; letter-spacing:0; color:#272421; background:#FFFFFF; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-anchor:none; font-feature-settings:"pnum" on, "lnum" on}
+.fonts-loaded body {font-family:Raleway, sans-serif}
+
+@media (max-width:767px) {
+    body {font-size:18px; line-height:32px}
+}
+
+::-ms-clear {display:none}
+
+.btn {display:block; margin:0; padding:0; width:100%; height:48px; overflow:visible; outline:none; text-decoration:none; background:#18171F; color:#FFFFFF; border:1px solid #18171F; border-radius:0; font:600 12px/46px Arial, Helvetica, sans-serif; letter-spacing:0.02em; text-transform:uppercase; text-align:center; position:relative; -webkit-appearance:none; cursor:pointer; transition:background-color 0.2s, color 0.2s; box-sizing:border-box}
+.fonts-loaded .btn {font-family:Raleway, sans-serif}
+.btn:hover {text-decoration:none; background-color:#FFFFFF; color:#18171F}
+
+@media (max-width:767px) {
+    .btn {font-size:16px}
+}
+
+form {margin:30px 0 0 0; padding:0}
+form.loading {position:relative}
+form.loading::after {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(255, 255, 255, 0.3) url(../images/loading.svg) no-repeat center; z-index:1}
+
+@media (max-width:767px) {
+    form {margin:34px 0 0 0}
+}
+
+.message {margin:24px 0 0 0; padding:24px 44px 24px 24px}
+.message::before {content:""; display:block; width:24px; height:24px}
+.message-text {margin:17px 0 0 0; color:#6B645C}
+
+@media (max-width:767px) {
+    .message {padding:16px}
+    .message-text {margin:12px 0 0 0}
+}
+
+.message-success {background:#EBE7DE}
+.message-success::before {background:url(../images/message-success.svg) no-repeat center}
+.message-error {background:#EBE7DE}
+.message-error::before {background:url(../images/message-error.svg) no-repeat center}
+
+.form-input {position:relative; margin:24px 0}
+.form-input > span {position:absolute; left:16px; right:16px; top:12px; font-size:14px; line-height:24px; font-weight:500; letter-spacing:0; color:#6B645C; transition:all 0.2s; pointer-events:none; z-index:1}
+.form-input > span em {font-style:normal; color:#D1233E; margin:0 0 0 2px}
+.form-input.focus > span,
+.form-input.full > span {font-size:12px; line-height:20px; top:6px}
+.form-input input {position:relative; border:1px solid #F5F5F5; font:500 14px/24px Arial, sans-serif; letter-spacing:0; color:#18171F; vertical-align:top; margin:0; padding:18px 15px 4px 15px; width:100%; height:48px; box-sizing:border-box; outline:none; border-radius:0; background:#F5F5F5; -webkit-appearance:none; transition:border-color 0.2s}
+.fonts-loaded .form-input input,
+.fonts-loaded .form-input textarea {font-family:Raleway, sans-serif}
+.form-input input:hover {border-color:#18171F}
+.form-input input:focus {border-color:#18171F}
+.form-input input.error {border-color:#D1233E}
+label.error {display:block; margin:7px 0 0 0; font-weight:normal; font-size:12px; line-height:20px; text-align:right; color:#D1233E; letter-spacing:0}
+
+@media (max-width:767px) {
+    .form-input > span {font-size:16px}
+    .form-input.focus > span,
+    .form-input.full > span {font-size:12px}
+    .form-input input {font-size:16px}
+}
+
+.form-input input:-webkit-autofill,
+.form-input input:-webkit-autofill:active,
+.form-input input:-webkit-autofill:focus,
+.form-input input:-webkit-autofill:hover {-webkit-text-fill-color:#18171F; caret-color:#18171F; -webkit-transition:background-color 999999s ease-in-out 0s; transition:background-color 999999s ease-in-out 0s}
+
+.form-submit {margin:24px 0 0 0}
+
+.container {min-width:440px; width:440px; background:url(../images/logo-back.svg) no-repeat center top}
+
+@media (max-width:767px) {
+    .container {min-width:0; width:auto; padding:28px 40px 12px 40px}
+}
+
+.wrapper {width:100%; min-width:320px; min-height:100%; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center}
+
+.logo img {display:block; width:440px}
+
+@media (max-width:767px) {
+    .logo img {width:100%}
+}
+
+.text {margin:32px 0 0 0}
+
+@media (max-width:767px) {
+    .text {margin:24px 0 0 0}
+}
+
+.form-title {margin:56px 0 0 0; font-weight:500; font-size:16px; line-height:22px; letter-spacing:-0.01em; color:#272421}
+
+@media (max-width:767px) {
+    .form-title {margin:48px 0 0 0; font-size:16px; line-height:26px}
+}

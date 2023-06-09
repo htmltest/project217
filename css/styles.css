@@ -70,6 +70,9 @@ label.error {display:block; margin:7px 0 0 0; font-weight:normal; font-size:12px
 
 .form-submit {margin:24px 0 0 0}
 
+.captcha-notice {margin:20px 0 0 0; font-size:12px; line-height:18px; color:#18171F}
+.captcha-notice a {color:#18171F}
+
 .container {min-width:440px; width:440px; background:url(../images/logo-back.svg) no-repeat center top}
 
 @media (max-width:767px) {
